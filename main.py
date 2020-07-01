@@ -9,7 +9,7 @@ def sendEmail():
     conn.starttls() 
     #Login to Gmail
     conn.login('yourEmailGoesHere', 'yourPasswordGoesHere')
-    #Send email
+    #Send email; change SenderEmail and RecieverEmail as you like
     conn.sendmail('SenderEmail', 'RecieverEmail', message)
     #End connection
     conn.quit()
