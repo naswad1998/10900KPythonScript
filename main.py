@@ -15,11 +15,9 @@ def sendEmail():
     conn.quit()
     print('Email Sent')
     
-
 def getStatus():
     #Run forever
     while True:
-        
         #open web page of product
         getPage = requests.get('ProductURLGoesHere')
         
@@ -38,6 +36,6 @@ def getStatus():
             sendEmail()
         #delay 10 seconds
         time.sleep(10)    
-        
+            
 #Run the loop        
 getStatus()
