@@ -1,7 +1,7 @@
 import bs4, requests, smtplib, time
 
 def sendEmail():
-    #Message to be send
+    #Message to be sent
     message = "10900k in stock at Memory Express!"
     #initialize connection to Gmail
     conn = smtplib.SMTP('smtp.gmail.com', 587) 
